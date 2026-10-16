@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>tiir 티르 | A small café, on view · 서교동 카페</title>
-<meta name="description" content="A small café, on view. 서교동에 자리한 작고 개성 있는 카페 티르. 예쁜 공간에서 커피와 디저트를 편하게. 반려견 동반 가능." />
+<title>Cafe tiir 티르 | 서교동 카페</title>
+<meta name="description" content="Cafe tiir. 서교동에 자리한 작고 개성 있는 카페 티르. 예쁜 공간에서 커피와 디저트를 편하게. 반려견 동반 가능." />
 <link rel="canonical" href="https://tir-sample.lgt3232.workers.dev/" />
 <meta name="theme-color" content="#FFFFFF" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:site_name" content="tiir" />
-<meta property="og:title" content="tiir 티르 | A small café, on view" />
+<meta property="og:title" content="Cafe tiir 티르 | 서교동 카페" />
 <meta property="og:description" content="서교동의 작고 개성 있는 카페. 커피 · 디저트 · 반려견 동반." />
 <meta property="og:url" content="https://tir-sample.lgt3232.workers.dev/" />
 <meta property="og:image" content="https://tir-sample.lgt3232.workers.dev/og-tiir.jpg" />
@@ -126,11 +126,11 @@ h2{ font-size:clamp(2.4rem,6.4vw,5rem); line-height:.98; }
 .works{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px 14px; }
 .work{ margin:0; }
 .work .pic{ overflow:hidden; background:var(--wall); }
-.work img{ width:100%; aspect-ratio:4/5; object-fit:cover; transition:transform 1.2s ease; }
+.work img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
 .work figcaption{ margin-top:10px; padding-top:8px; border-top:1.5px solid var(--ink); font-family:var(--mono); font-size:.7rem; line-height:1.5; color:var(--soft); }
-.work figcaption b{ display:block; font-family:var(--grot); font-weight:600; font-size:.98rem; letter-spacing:-.02em; color:var(--ink); }
+.work figcaption b{ display:block; width:fit-content; padding:0 .1em; margin-left:-.1em; transition:background .25s ease; font-family:var(--grot); font-weight:600; font-size:.98rem; letter-spacing:-.02em; color:var(--ink); }
 .work figcaption .no{ color:var(--cobalt); }
-@media (hover:hover){ .work:hover img{ transform:scale(1.03); } .work:hover figcaption b{ background:var(--yellow); display:inline; } }
+@media (hover:hover){ .work:hover figcaption b{ background:var(--yellow); } }   /* v0.1.1 사진 고정 · 캡션 제목 배경만 바뀜(레이아웃 변화 없음) */
 @media (min-width:900px){ .works{ grid-template-columns:repeat(4,1fr); gap:44px 22px; } .works .work:nth-child(4n+2){ margin-top:60px; } .works .work:nth-child(4n+4){ margin-top:30px; } }
 
 .menu-cats{ display:flex; flex-wrap:wrap; gap:10px; margin-top:clamp(40px,5vw,60px); padding-top:24px; border-top:1.5px solid var(--ink); align-items:center; }
@@ -211,7 +211,7 @@ h2{ font-size:clamp(2.4rem,6.4vw,5rem); line-height:.98; }
     <div class="wrap">
       <div class="reveal">
         <p class="tag">Café · Seogyo-dong, Mapo<span class="ko">서교동 카페</span></p>
-        <h1 id="hero-h">A small café,<br /><span class="hl">on view.</span></h1>
+        <h1 id="hero-h">Cafe<br /><span class="hl">tiir</span></h1>
         <p class="ko-t">서교동에 자리한 작고 개성 있는 카페</p>
         <p class="lead">예쁜 공간에서 맛있는 커피와 디저트를 편하게 즐겨보세요. 반려견과 함께 와도 좋아요.</p>
         <div class="cta">
@@ -250,7 +250,6 @@ h2{ font-size:clamp(2.4rem,6.4vw,5rem); line-height:.98; }
           <p class="tag">The Collection<span class="ko">커피 · 디저트</span></p>
           <h2 id="col-h" style="margin-top:20px">Works on<br /><span class="hl">the table.</span><span class="ko-t">테이블 위의 작은 작품들</span></h2>
         </div>
-        <p class="lead">모든 잔은 작품처럼. 사진 아래 캡션은 작품 라벨을 흉내 낸 거예요.</p>
       </div>
       <div class="works">
         <figure class="work reveal"><div class="pic"><img loading="lazy" src="tr-americano.webp" alt="파란 코스터 위의 아이스 블랙 커피" width="900" height="1126" /></div><figcaption><span class="no">No. 01</span><b>Iced Black</b>Glass, ice, blue coaster</figcaption></figure>

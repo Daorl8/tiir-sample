@@ -1,0 +1,13 @@
+.git
+.git/**
+wrangler.toml
+.assetsignore
+README.md
+CHANGELOG.md
+STRUCTURE.md
+img
+img/**
+index_*.html
+tr-ledge.webp
+tr-plants.webp
+tr-tartan.webp
